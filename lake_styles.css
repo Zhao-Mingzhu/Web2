@@ -1,0 +1,121 @@
+﻿@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Zhao Mingzhu
+   Date:   2024.9.13
+   
+   Filename: lake_styles.css
+
+*/
+/* 引入 cac_champagne 字体 */  
+@font-face {  
+   font-family: 'CacChampagne';  
+   src: url('cac_champagne.woff') format('woff'),  
+        url('cac_champagne.ttf') format('truetype');  
+    
+}  
+  
+/* 引入 DobkinPlain 字体 */  
+@font-face {  
+   font-family: 'DobkinPlain';  
+   src: url('DobkinPlain.woff') format('woff'),  
+        url('DobkinPlain.ttf') format('truetype');  
+}  
+  
+/* 应用自定义字体到 body 元素 */  
+#leftcol>h1{    
+   font-family: 'CacChampagne', sans-serif;
+   font-size: 50px; /* 大小 */  
+   font-weight: normal; /*粗细*/
+   line-height: 0; /* 调整行高 */   
+   padding: 0 10px; /* 上下为0，左右各10px */ 
+}
+#rightcol>nav>h2{    
+   font-family: 'CacChampagne', sans-serif;   
+   font-weight: normal;
+   text-align: center; /* 居中 */  
+   padding-right: 150px;  /*偏左*/
+}
+
+/*字体居中*/
+#leftcol>aside>h1{
+   text-align: center;  
+}
+
+/* 使用颜色名称和颜色值 */  
+body {  
+   background-color:white; 
+}  
+header{
+   background-color: rgb(120, 74, 120);
+}
+
+#leftcol {  
+   background-color: #000000;  
+   color: #ffffff;    
+} 
+
+#rightcol {  
+   background-color: rgb(88,45,90);
+   color: #ffffff;   
+   
+} 
+
+#rightcol>blockquote{
+   color: #e216c7;
+}
+
+footer{
+   background-color: rgb(77, 70, 78);
+   text-align: center; /*字体居中*/  
+}
+
+#rightcol>nav>ul {    
+   list-style-type: none; /* 修改列表标记为没有 */   
+} 
+
+/*pseudo-classes*/
+a:link{
+   color: rgb(150,158,104,0.5);
+   text-decoration: none;    /*移除下划线*/
+}
+#leftcol a:link{
+   color: pink;
+}
+#rightcol a:link{
+   color: rgb(151,112,144,0.5);/*半透明*/
+   text-decoration: none;   /*移除下划线*/  
+}
+
+#leftcol a:hover, 
+#rightcol a:hover, 
+header a:hover {
+   text-decoration: underline; /* 鼠标悬停时显示下划线 */
+   color: #000000; /* 悬停时的颜色 */
+}
+
+#leftcol aside:first-of-type {  
+   background-color:rgb(227, 162, 142); /* 第一个aside的背景颜色 */  
+}   
+#leftcol aside:last-of-type {  
+   background-color: rgb(209, 187, 104); /* 第二个aside的背景颜色 */
+}
+
+/*pseudo-element*/
+ #rightcol>blockquote:before {  
+   content: "“"; 
+   color:  #e216c7;  
+   font-size: 25px; /* 放大引号 */ 
+ }  
+ #rightcol>blockquote:after {  
+   content: "”"; 
+   color:  #e216c7;  
+   font-size: 25px; /* 放大引号 */ 
+ }
+ 
+
+ 
