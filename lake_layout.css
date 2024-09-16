@@ -91,4 +91,8 @@ section#leftcol img {
 	width: 100%;
 	display: block;
 }
+section#leftcol>p{/*内容左右边距*/
+	padding-left: 2%;
+	padding-right: 2%;
+}
 
